@@ -208,7 +208,7 @@ button:focus-visible {
 
   .form-wrapper {
     position: absolute;
-    bottom: 0;
+    bottom: 48px;
     left: 50%;
     z-index: 99;
     transform: translateX(-50%);
@@ -216,6 +216,9 @@ button:focus-visible {
     width: 90%;
   }
   .mapboxgl-ctrl-group {
+    display: none;
+  }
+  .single-input-wrapper label {
     display: none;
   }
 
