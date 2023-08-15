@@ -200,12 +200,12 @@ button:focus-visible {
 
 @media only screen and (max-width: 600px) {
   .page-wrapper {
-    height: 92vh;
+    height: 91vh;
   }
   .map-container {
     min-width: 200px;
-    height: 92vh;
-    max-height: 92vh;
+    height: 91vh;
+    max-height: 91vh;
     width: 100vw;
   }
 
