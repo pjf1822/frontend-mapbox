@@ -201,7 +201,7 @@ button:focus-visible {
 @media only screen and (max-width: 600px) {
   .page-wrapper {
     height: 91vh;
-    overflow-y: hidden !important;
+    overflow: hidden !important;
   }
 
   .map-container {
@@ -209,11 +209,11 @@ button:focus-visible {
     height: 91vh;
     max-height: 91vh;
     width: 100vw;
-    overflow-y: hidden !important;
+    overflow: hidden !important;
   }
 
   .map-container .mapboxgl-canvas-container canvas {
-    overflow-y: hidden !important;
+    overflow: hidden !important;
   }
   .form-wrapper {
     position: absolute;
