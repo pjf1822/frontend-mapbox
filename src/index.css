@@ -199,6 +199,10 @@ button:focus-visible {
 }
 
 @media only screen and (max-width: 600px) {
+  body {
+    min-height: 90vh;
+    height: 90vh;
+  }
   .page-wrapper {
     height: 91vh;
     overflow: hidden !important;
