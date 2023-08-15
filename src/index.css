@@ -200,7 +200,7 @@ button:focus-visible {
 
 @media only screen and (max-width: 600px) {
   #root {
-    height: 90vh;
+    height: 110vh;
   }
   .page-wrapper {
     height: 91vh;
