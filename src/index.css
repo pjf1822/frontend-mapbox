@@ -221,7 +221,9 @@ button:focus-visible {
   .single-input-wrapper label {
     display: none;
   }
-
+  .map-container .mapboxgl-canvas-container canvas {
+    height: 800px !important;
+  }
   .mapboxgl-ctrl-top-right {
     right: 50%;
     transform: translateX(50%);
