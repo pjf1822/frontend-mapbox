@@ -201,7 +201,9 @@ button:focus-visible {
 @media only screen and (max-width: 600px) {
   .page-wrapper {
     height: 91vh;
+    overflow-y: hidden;
   }
+
   .map-container {
     min-width: 200px;
     height: 91vh;
