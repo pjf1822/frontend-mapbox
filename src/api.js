@@ -2,7 +2,9 @@
 
 const fetchAddresses = async () => {
   try {
-    const res = await fetch("/api/addresses/getall");
+    const res = await fetch(
+      "https://server-mapbox.onrender.com/api/addresses/getall"
+    );
 
     if (!res.ok) {
       throw new Error("Failed to fetch addresses");
@@ -17,13 +19,16 @@ const fetchAddresses = async () => {
 
 const createAddress = async (payload) => {
   try {
-    const res = await fetch("/api/addresses/create", {
-      method: "POST",
-      body: JSON.stringify(payload),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const res = await fetch(
+      "https://server-mapbox.onrender.com/api/addresses/create",
+      {
+        method: "POST",
+        body: JSON.stringify(payload),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
 
     if (!res.ok) {
       throw new Error("Something went wrong");
@@ -37,9 +42,12 @@ const createAddress = async (payload) => {
 };
 const deleteAddress = async (id) => {
   try {
-    const res = await fetch(`/api/addresses/${id}`, {
-      method: "DELETE",
-    });
+    const res = await fetch(
+      `https://server-mapbox.onrender.com/api/addresses/${id}`,
+      {
+        method: "DELETE",
+      }
+    );
 
     if (!res.ok) {
       throw new Error("Failed to delete address");
