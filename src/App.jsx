@@ -11,7 +11,8 @@ import ramSkull from "./assets/RAM.png";
 import tattooLogo from "./assets/output-onlinepngtools.png";
 import { createAddress, deleteAddress, fetchAddresses } from "./api";
 import PopupContent from "./components/PopupContent";
-mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN;
+
+mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_API_KEY;
 
 export default function App() {
   const [listOfAddresses, setListOfAddresses] = useState([]);
