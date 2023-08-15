@@ -56,18 +56,16 @@ export default function App() {
 
   const deleteShop = async (featureId) => {
     try {
-      await deleteAddress(featureId); // Assuming deleteAddress is a function that handles the deletion on the server side
+      await deleteAddress(featureId);
 
-      // Filter out the address with the matching _id and update the state
       const updatedAddresses = listOfAddresses.filter(
         (address) => address._id !== featureId
       );
       setListOfAddresses(updatedAddresses);
 
-      // Optionally notify the user of successful deletion
       notify("Address deleted successfully!");
     } catch (error) {
-      notify("Failed to delete address."); // Notify user of failure
+      notify("Failed to delete address.");
       console.error("An error occurred while deleting the address:", error);
     }
   };
@@ -76,7 +74,7 @@ export default function App() {
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: mapContainer.current,
-      style: "mapbox://styles/pjf1822/clekajgr3000001l8y22r3psx",
+      style: process.env.REACT_APP_MAPBOX_STYLE_KEY,
       center: [lng, lat],
       zoom: zoom,
     });
