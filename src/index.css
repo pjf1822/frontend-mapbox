@@ -215,6 +215,9 @@ button:focus-visible {
   .map-container .mapboxgl-canvas-container canvas {
     overflow: hidden !important;
   }
+  .mapboxgl-map {
+    overflow: hidden !important;
+  }
   .form-wrapper {
     position: absolute;
     bottom: 28px;
