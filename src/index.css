@@ -199,6 +199,9 @@ button:focus-visible {
 }
 
 @media only screen and (max-width: 600px) {
+  #root {
+    height: 90vh;
+  }
   .page-wrapper {
     height: 91vh;
     overflow: hidden !important;
@@ -206,8 +209,8 @@ button:focus-visible {
 
   .map-container {
     min-width: 200px;
-    height: 91vh;
-    max-height: 91vh;
+    /* height: 91vh; */
+    /* max-height: 91vh; */
     width: 100vw;
     overflow: hidden !important;
   }
