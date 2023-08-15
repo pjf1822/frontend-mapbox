@@ -212,6 +212,7 @@ export default function App() {
       setLink("");
       notify("Your pin has been added!");
       // Handle success
+      await getAllAddresses();
     } catch (error) {}
 
     return;
