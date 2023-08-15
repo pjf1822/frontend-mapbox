@@ -222,7 +222,7 @@ button:focus-visible {
     display: none;
   }
   .map-container .mapboxgl-canvas-container canvas {
-    height: 300px !important;
+    height: 800px !important;
   }
   .mapboxgl-ctrl-top-right {
     right: 50%;
