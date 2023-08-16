@@ -28,8 +28,13 @@ const PopupContent = ({
       <br />
       {newLink && (
         <h4 style={{ fontSize: "14px" }}>
-          <a href={newLink} target="_blank" rel="noopener noreferrer">
-            Instagram Page
+          <a
+            style={{ textDecoration: "underline" }}
+            href={newLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Tattoo Artist's Instagram Page
           </a>
         </h4>
       )}
