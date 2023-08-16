@@ -111,7 +111,7 @@ button:focus-visible {
   align-items: center;
   position: absolute;
   bottom: 40px;
-  right: 40px;
+  right: 20px;
   border-radius: 5%;
 }
 
