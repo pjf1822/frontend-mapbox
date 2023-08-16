@@ -89,6 +89,15 @@ button:focus-visible {
   position: relative;
   max-height: 100vh;
 }
+.logo-wrapper {
+  height: 172px;
+  width: 286px;
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  z-index: 100;
+  filter: invert(100%);
+}
 
 /* FORM STUFF */
 .form-wrapper {
@@ -230,12 +239,22 @@ button:focus-visible {
   .mapboxgl-ctrl-group {
     display: none;
   }
+  .logo-wrapper {
+    height: 100px;
+    width: 200px;
+    position: absolute;
+    top: 0px;
+    left: -45px;
+    z-index: 100;
+    filter: invert(100%);
+  }
+
   .single-input-wrapper label {
     display: none;
   }
 
   .mapboxgl-ctrl-top-right {
-    right: 50%;
+    right: 40%;
     transform: translateX(50%);
   }
   .mapboxgl-ctrl-top-right .mapboxgl-ctrl {

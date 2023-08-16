@@ -8,6 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 // IMAGES
 import ramSkull from "./assets/RAM.png";
+import logo from "./assets/tatty-transformed.png";
 import tattooLogo from "./assets/output-onlinepngtools.png";
 import { createAddress, deleteAddress, fetchAddresses } from "./api";
 import PopupContent from "./components/PopupContent";
@@ -221,6 +222,8 @@ export default function App() {
 
   return (
     <div className="page-wrapper">
+      <img src={logo} className="logo-wrapper" />
+
       <div ref={mapContainer} className="map-container" />
 
       <form className="form-wrapper" onSubmit={submitGeoLocateStuff}>
