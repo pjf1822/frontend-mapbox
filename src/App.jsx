@@ -75,7 +75,7 @@ export default function App() {
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: mapContainer.current,
-      style: process.env.REACT_APP_MAPBOX_STYLE_KEY,
+      style: "mapbox://styles/pjf1822/clekajgr3000001l8y22r3psx",
       center: [lng, lat],
       zoom: zoom,
     });
