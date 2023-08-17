@@ -215,8 +215,8 @@ button:focus-visible {
 
   .map-container {
     min-width: 200px;
-    height: 91vh;
-    max-height: 91vh;
+    /* height: 91vh; */
+    /* max-height: 91vh; */
     width: 100vw;
     overflow: hidden !important;
   }
