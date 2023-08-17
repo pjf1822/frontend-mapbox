@@ -13,8 +13,8 @@ import tattooLogo from "./assets/output-onlinepngtools.png";
 import { createAddress, deleteAddress, fetchAddresses } from "./api";
 import PopupContent from "./components/PopupContent";
 
-mapboxgl.accessToken =
-  "pk.eyJ1IjoicGpmMTgyMiIsImEiOiJjbGZybHJsMXMwMmd3M3BwMmFiZXlvZjczIn0.68xXIxxj_-iONU42ihPWZA";
+const mapboxAccessToken = process.env.REACT_APP_MAPBOX_API_KEY;
+const mapboxStyleKey = process.env.REACT_APP_MAPBOX_STYLE_KEY;
 
 export default function App() {
   const [listOfAddresses, setListOfAddresses] = useState([]);
@@ -76,13 +76,13 @@ export default function App() {
   useEffect(() => {
     const map = new mapboxgl.Map({
       container: mapContainer.current,
-      style: "mapbox://styles/pjf1822/clekajgr3000001l8y22r3psx",
+      style: mapboxStyleKey,
       center: [lng, lat],
       zoom: zoom,
     });
 
     const geocoder = new MapboxGeocoder({
-      accessToken: mapboxgl.accessToken,
+      accessToken: mapboxAccessToken,
       mapboxgl: mapboxgl,
     });
 
