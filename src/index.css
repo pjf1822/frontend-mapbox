@@ -216,8 +216,7 @@ button:focus-visible {
 @-moz-document url-prefix() {
   @media only screen and (max-width: 600px) {
     .page-wrapper {
-      height: 100vh;
-      overflow: hidden !important;
+      height: 120vh;
     }
   }
 }
