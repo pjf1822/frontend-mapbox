@@ -251,6 +251,7 @@ export default function App() {
                 Link
               </label>
               <input
+                type="url"
                 label="link"
                 id="link"
                 value={link}
