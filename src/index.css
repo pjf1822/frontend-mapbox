@@ -206,22 +206,13 @@ button:focus-visible {
   margin-bottom: 4px;
   align-items: center;
 }
-@media only screen and (max-width: 600px) and (-webkit-min-device-pixel-ratio: 0) {
+
+@media only screen and (max-width: 600px) {
   .page-wrapper {
     height: 91vh;
     overflow: hidden !important;
   }
-}
-/* fire fox */
-@-moz-document url-prefix() {
-  @media only screen and (max-width: 600px) {
-    .page-wrapper {
-      height: 120vh;
-    }
-  }
-}
 
-@media only screen and (max-width: 600px) {
   .map-container {
     min-width: 200px;
     /* height: 91vh; */
@@ -265,6 +256,7 @@ button:focus-visible {
   .mapboxgl-ctrl-top-right {
     right: 40%;
     transform: translateX(50%);
+    top: 1%;
   }
   .mapboxgl-ctrl-top-right .mapboxgl-ctrl {
     margin: 10px 0px;
